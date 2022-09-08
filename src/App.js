@@ -1,5 +1,6 @@
 import React from 'react'
 import ShowName from './showName'
+import UseState from './components/UseState'
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
 
   return (
     <div >
-      <p>First Name:<input required type="text" value={fName} onChange={handleUpdateFirstName} /></p>
+      {/* <p>First Name:<input required type="text" value={fName} onChange={handleUpdateFirstName} /></p>
       <p>Last Name:<input type="text" value={lName} onChange={HandleUpdateLastName} /></p>
       Age: <input type="text" value={age} onChange={handleUpdateAge} />
       <select>
@@ -38,10 +39,10 @@ function App() {
 
       {/* <p>{`Your name is: ${fName} ${lName}`}</p> */}
 
-      <button onClick={handleSubmit}>Submit</button>
+      {/* <button onClick={handleSubmit}>Submit</button>  */}
 
-      <ShowName fName={fName} lName={lName}/>
-     
+      {/* <ShowName fName={fName} lName={lName}/> */}
+     <UseState />
     </div>
   );
 }
