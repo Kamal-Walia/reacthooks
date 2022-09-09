@@ -1,7 +1,7 @@
 import React from 'react'
 import ShowName from './showName'
 import UseState from './components/UseState'
-
+import ContextClassProvider from './components/ClassContextExample/ContextClassProvider'
 
 function App() {
 
@@ -42,7 +42,8 @@ function App() {
       {/* <button onClick={handleSubmit}>Submit</button>  */}
 
       {/* <ShowName fName={fName} lName={lName}/> */}
-     <UseState />
+     {/* <UseState /> */}
+      <ContextClassProvider />
     </div>
   );
 }

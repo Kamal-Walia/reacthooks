@@ -7,7 +7,8 @@ const UseState = () =>{
     return(
         <div>
              <input type='text' value={fname} onChange={(e) => setFname(e.target.value)} />
-           { fname && <UseEffect fname={fname} handleUpdate={setFname} lname={lname} setLastName={setLastName}/> }
+             <input type='text' value={lname} onChange={(e) => setLastName(e.target.value)} />
+           { fname && <UseEffect fname={fname} lname={lname}/> }
         <div>Use State Component {fname}</div>
         </div>
         

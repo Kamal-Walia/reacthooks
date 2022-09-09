@@ -10,12 +10,12 @@ const UseEffect = (props) => {
 
     useEffect(() =>{
         console.log("Behave like didUpdate ");
-    },[props.fname])
+    },[props.fname, props.lname])
 
     return(
         <div>
             Use Effect
-            <input type='text' value={props.lname} onChange={(e) => props.setLastName(e.target.value)} />
+            {/* <input type='text' value={props.lname} onChange={(e) => props.setLastName(e.target.value)} /> */}
         </div>
     )
 }
